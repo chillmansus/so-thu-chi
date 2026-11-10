@@ -1,0 +1,16 @@
+{
+  "name": "so-thu-chi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tools/merge.test.mjs",
+    "icons": "python tools/make_icons.py"
+  },
+  "dependencies": {
+    "firebase": "^13.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

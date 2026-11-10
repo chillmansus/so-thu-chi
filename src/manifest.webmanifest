@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Sổ Thu Chi",
+  "short_name": "Thu Chi",
+  "description": "Sổ ghi thu chi hằng ngày và thống kê theo tháng.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0a09",
+  "theme_color": "#0b0a09",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

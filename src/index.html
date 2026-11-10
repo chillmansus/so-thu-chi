@@ -1,0 +1,26 @@
+<title>Sổ Thu Chi</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#0b0a09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<!-- digits only: Be Vietnam Pro has no equal-width numerals, so the numbers in tables come from Inter -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&text=0123456789&display=swap">
+<link rel="stylesheet" href="app.css">
+
+<div id="app">
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <main id="view"></main>
+  <nav id="tabbar" aria-label="Chính">
+    <button class="tab on" data-act="tab" data-v="so"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5h11a1.5 1.5 0 0 1 1.5 1.5v15.5H7.5A1.5 1.5 0 0 1 6 19z"/><path d="M6 18.5a1.5 1.5 0 0 1 1.5-1.5h11M10 8h5M10 11.5h5"/></svg><span>Sổ</span></button>
+    <button id="addbtn" data-act="add" aria-label="Ghi khoản mới"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+    <button class="tab" data-act="tab" data-v="tk"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 8.5 8.5H12z"/><path d="M15.5 3.6a8.5 8.5 0 0 1 4.9 4.9h-4.9z"/></svg><span>Thống kê</span></button>
+  </nav>
+  <div id="layers"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="fx.js"></script>
+<script src="sfx.js"></script>
+<script src="firebase-config.js"></script>
+<script src="cloud.js"></script>
+<script src="app.js"></script>
